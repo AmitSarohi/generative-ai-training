@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "question": "What is the key innovation introduced in the Transformer architecture?",
+    "expected_answer": "The Transformer architecture introduces self-attention mechanisms that allow the model to process input sequences in parallel without recurrence, replacing RNNs and LSTMs.",
+    "source_documents": [
+      "1706.03762.pdf"
+    ],
+    "tests_memory": false
+  },
+  {
+    "id": 2,
+    "question": "How does BERT differ from traditional language models like GPT in its pre-training approach?",
+    "expected_answer": "BERT uses a masked language model (MLM) objective and next sentence prediction, training on bidirectional context, whereas GPT uses a left-to-right autoregressive approach.",
+    "source_documents": [
+      "1810.04805.pdf"
+    ],
+    "tests_memory": false
+  },
+  {
+    "id": 3,
+    "question": "What are the main components of the Transformer encoder?",
+    "expected_answer": "The Transformer encoder consists of multi-head self-attention layers and position-wise feed-forward networks, with residual connections and layer normalization.",
+    "source_documents": [
+      "1706.03762.pdf"
+    ],
+    "tests_memory": false
+  },
+  {
+    "id": 4,
+    "question": "What is the advantage of using self-attention over traditional attention mechanisms?",
+    "expected_answer": "Self-attention allows the model to directly attend to all positions in the sequence in a single layer, enabling better modeling of long-range dependencies and parallel computation.",
+    "source_documents": [
+      "1706.03762.pdf"
+    ],
+    "tests_memory": true
+  },
+  {
+    "id": 5,
+    "question": "How does the denoising diffusion probabilistic model work for image generation?",
+    "expected_answer": "DDPM works by gradually adding noise to data during training (forward process) and learning to reverse this process to generate samples from noise (reverse process).",
+    "source_documents": [
+      "2005.14165.pdf"
+    ],
+    "tests_memory": false
+  },
+  {
+    "id": 6,
+    "question": "What are its limitations?",
+    "expected_answer": "Diffusion models can be computationally expensive due to the many sampling steps required, and the training process can be slow compared to other generative models.",
+    "source_documents": [
+      "2005.14165.pdf"
+    ],
+    "tests_memory": true
+  },
+  {
+    "id": 7,
+    "question": "How does LoRA reduce the number of trainable parameters in fine-tuning large language models?",
+    "expected_answer": "LoRA injects low-rank adaptation matrices into the transformer layers, freezing the original weights and only training the low-rank matrices, significantly reducing trainable parameters.",
+    "source_documents": [
+      "1907.11692.pdf"
+    ],
+    "tests_memory": false
+  },
+  {
+    "id": 8,
+    "question": "What is the key difference between ELECTRA and BERT in their pre-training objectives?",
+    "expected_answer": "ELECTRA uses a replaced token detection objective where a discriminator predicts whether tokens are replaced by a generator, while BERT uses masked language modeling with random token masking.",
+    "source_documents": [
+      "1910.10683.pdf",
+      "1810.04805.pdf"
+    ],
+    "tests_memory": false
+  },
+  {
+    "id": 9,
+    "question": "Compare the computational efficiency of Transformers versus RNNs for sequence modeling.",
+    "expected_answer": "Transformers are more computationally efficient for training due to parallelization across sequence positions, while RNNs process sequentially and cannot be parallelized in the same way.",
+    "source_documents": [
+      "1706.03762.pdf"
+    ],
+    "tests_memory": true
+  },
+  {
+    "id": 10,
+    "question": "What are the main differences between the encoder and decoder in the original Transformer architecture?",
+    "expected_answer": "The encoder processes the input sequence and produces representations, while the decoder generates the output sequence autoregressively. The decoder includes cross-attention to attend to encoder outputs.",
+    "source_documents": [
+      "1706.03762.pdf"
+    ],
+    "tests_memory": false
+  }
+]

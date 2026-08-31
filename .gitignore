@@ -1,0 +1,48 @@
+# Environment variables
+.env
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (PDFs should be manually placed)
+# Note: data/pdfs/ contains the five required PDFs that users must download manually.
+# These are large files and should not be committed to git.
+data/pdfs/*.pdf
+
+# Vector store (regenerated from PDFs)
+data/vectorstore/
+
+# Evaluation results
+evaluation/results.json
+evaluation/results.csv
+
+# Reports
+reports/*.pdf
+
+# Logs
+*.log
